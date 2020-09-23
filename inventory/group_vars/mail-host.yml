@@ -1,18 +1,18 @@
 ---
 title: |
-  Login Info - Red Hat Open Innovation Labs Residency for {{ '{{ customer_name }} - {{ project_name }}' }}
+  Login Info - Red Hat Open Innovation Labs Residency for {{ customer_name }} - {{ project_name }}
 body: |
-  Hi {{ '{{ first_name }}' }} <br />
-  Please use the following temporary password to access the environment for the {{ '{{ customer_name }} {{ project_name }}' }} Labs residency. Make sure to use the instructions below to update your password ASAP.
+  Hi {{ first_name }} <br />
+  Please use the following temporary password to access the environment for the {{ customer_name }} {{ project_name }} Labs residency. Make sure to use the instructions below to update your password ASAP.
 
-  Username: **{{ '{{ user_name }}' }}** <br />
-  Temporary password: **{{ '{{ password }}' }}**
+  Username: **{{ user_name }}** <br />
+  Temporary password: **{{ password }}**
 
   To reset the password, please follow these steps:
 
-  1. Login to the IdM server at https://{{ '{{ ipa_host }}' }}
+  1. Login to the IdM server at https://{{ ipa_host }}
   2. You should then be prompted to change your password.
-  3. After resetting your password, you’ll then be able to access the Openshift cluster at https://{{ '{{ ' }}ipa_host | regex_replace('ipa', 'console-openshift-console'){{ ' }}' }}
+  3. After resetting your password, you’ll then be able to access the Openshift cluster at https://{{ ipa_host | regex_replace('ipa', 'console-openshift-console') }}
 
   Please reply to this e-mail if you have any questions.
 
