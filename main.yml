@@ -2,4 +2,13 @@
   tasks:
   - debug:
       msg: "{{ inventory_dir }}"
-  - command: "ls -al {{ inventory_dir }}/.."
+  - name: "List {{ inventory_dir }}"
+    command: "ls -al {{ inventory_dir }}"
+  - name: "List {{ inventory_dir }}/.."
+    command: "ls -al {{ inventory_dir }}/.."
+  - debug:
+      msg: "{{ playbook_dir }}"
+  - name: "List {{ playbook_dir }}"
+    command: "ls -al {{ playbook_dir }}"
+  - name: "List {{ playbook_dir }}/.."
+    command: "ls -al {{ playbook_dir }}/.."
