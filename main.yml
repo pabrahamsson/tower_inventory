@@ -6,7 +6,7 @@
     command: "tree {{ inventory_dir }}"
   - name: Include vars
     include_vars:
-      file: "{{ inventory_dir }}/project/hosting/residency/en_us/welcome_all.yml"
+      file: "{{ inventory_dir }}/project/hosting/residency/en_us/welcome-all.yml"
   - name: List vars
     debug:
       msg: "Title: {{ title }}"
