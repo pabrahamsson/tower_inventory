@@ -4,11 +4,9 @@
       msg: "{{ inventory_dir }}"
   - name: "List {{ inventory_dir }}"
     command: "tree {{ inventory_dir }}"
-  - name: "List {{ inventory_dir }}/.."
-    command: "tree {{ inventory_dir }}/.."
-  - debug:
-      msg: "{{ playbook_dir }}"
-  - name: "List {{ playbook_dir }}"
-    command: "tree {{ playbook_dir }}"
-  - name: "List {{ playbook_dir }}/.."
-    command: "tree {{ playbook_dir }}/.."
+  - name: Include vars
+    include_vars:
+      file: "{{ inventory_dir }}/project/hosting/residency/en_us/welcome_all.yml"
+  - name: List vars
+    debug:
+      msg: "Title: {{ title }}"
