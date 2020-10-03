@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: mail-host
   tasks:
   - debug:
       msg: "{{ inventory_dir }}"
