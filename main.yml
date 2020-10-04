@@ -4,8 +4,8 @@
       msg: "{{ inventory_dir }}"
   - name: "List {{ inventory_dir }}"
     command: "tree {{ inventory_dir }}"
-  - name: "List {{ inventory_dir }}/.."
-    command: "tree {{ inventory_dir }}/.."
+  - name: "List {{ playbook_dir }}"
+    command: "tree {{ playbook_dir }}"
 #  - name: "List templates in {{ inventory_dir}}/project/hosting/residency/en_us"
 #    command: "ls -al {{ inventory_dir }}/project/hosting/residency/en_us/"
 #  - name: Include vars
