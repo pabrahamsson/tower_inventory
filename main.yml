@@ -4,6 +4,8 @@
       msg: "{{ inventory_dir }}"
   - name: "List {{ inventory_dir }}"
     command: "tree {{ inventory_dir }}"
+  - name: "List templates in {{ inventory_dir}}/project/hosting/residency/en_us"
+    command: "ls -al {{ inventory_dir }}/project/hosting/residency/en_us/"
   - name: Include vars
     include_vars:
       file: "{{ inventory_dir }}/project/hosting/residency/en_us/onboard.yml"
