@@ -14,3 +14,6 @@
 #  - name: List vars
 #    debug:
 #      msg: "Title: {{ title }}"
+  - name: Check for mail variable
+    debug:
+      msg: "Mail {{ mail }}"
